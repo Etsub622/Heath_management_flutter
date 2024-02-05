@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:patient/customTextField.dart';
-import 'package:patient/login.dart';
+import 'customTextField.dart';
+import 'login.dart';
 
 class SignupPage extends StatefulWidget {
   SignupPage({super.key});

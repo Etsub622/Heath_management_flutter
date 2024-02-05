@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:patient/Appointments.dart';
-import 'package:patient/HomePage.dart';
-import 'package:patient/Profile.dart';
-import 'package:patient/SearchPage.dart';
-import 'package:patient/Services.dart';
+import 'Appointments.dart';
+import 'HomePage.dart';
+import 'Profile.dart';
+import 'SearchPage.dart';
+import 'Services.dart';
 
 class BottomNav extends StatefulWidget {
   const BottomNav({super.key});
@@ -44,9 +44,9 @@ class _BottomNavState extends State<BottomNav> {
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: ''),
           BottomNavigationBarItem(icon: Icon(Icons.search), label: ''),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: ''),
+          BottomNavigationBarItem(icon: Icon(Icons.calendar_month), label: ''),
           BottomNavigationBarItem(icon: Icon(Icons.room_service), label: ''),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: ''),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: ''),
         ],
       ),
     );
