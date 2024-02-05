@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:patient/BottomNav.dart';
+
+import 'BottomNav.dart';
 
 void main() {
   runApp(const MyApp());

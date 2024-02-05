@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:patient/BottomNav.dart';
-import 'package:patient/customTextField.dart';
-import 'package:patient/forgotPassword.dart';
-import 'package:patient/signup.dart';
+import 'BottomNav.dart';
+import 'customTextField.dart';
+import 'forgotPassword.dart';
+import 'signup.dart';
 
 class LoginPage extends StatefulWidget {
   LoginPage({super.key});

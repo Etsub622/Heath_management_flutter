@@ -1,37 +1,30 @@
 import 'package:flutter/material.dart';
 
-class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({super.key});
+class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
+  const CustomAppBar({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(25.0),
-      child: Row(
+    return AppBar(
+      title: const Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Container(
-            width: 40,
-            height: 40,
-            child: const CircleAvatar(
-              radius: 50,
-              backgroundColor: Colors.lightBlue,
-            ),
+          CircleAvatar(
+            radius: 20,
+            backgroundColor: Colors.lightBlue,
+            child: Image(image: AssetImage("asset/images/logo.jpg")),
           ),
           Row(
             children: [
-              const Icon(
+              Icon(
                 Icons.notifications,
-                size: 38,
+                size: 28,
                 color: Colors.lightBlue,
               ),
-              Container(
-                width: 35,
-                height: 35,
-                child: const CircleAvatar(
-                  radius: 100,
-                  backgroundImage: AssetImage('asset/images/user.jpg'),
-                ),
+              SizedBox(width: 10),
+              CircleAvatar(
+                radius: 18,
+                backgroundImage: AssetImage('asset/images/user.jpg'),
               ),
             ],
           ),
@@ -39,4 +32,7 @@ class CustomAppBar extends StatelessWidget {
       ),
     );
   }
+
+  @override
+  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 }

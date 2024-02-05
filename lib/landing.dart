@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:patient/signup.dart';
+import 'signup.dart';
 
 class LangindPage extends StatelessWidget {
   const LangindPage({super.key});

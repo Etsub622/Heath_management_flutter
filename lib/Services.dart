@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:patient/customAppBar.dart';
+import 'customAppBar.dart';
 
 class Services extends StatelessWidget {
   const Services({super.key});
